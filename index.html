@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="main-nav">        
+        <h1 class="brand">
+            <img class="logo" src="./images/coffee_logo.png" alt="coffee shop logo">
+            Coffee Masters
+        </h1>
+        <p class="established">Est. 2023</p>
+    </nav>
+
+    <div class="menu">
+        <div class="title">
+            <h1>Our Menu</h1> 
+            <span>Note: It's a taste you will never forget</span>
+        </div>
+        <section>
+            <h2>Coffee</h2>
+            <img src="./images/coffee.jpg" alt="coffee icon">
+            <article class="item">
+                <p class="flavor">French Vanilla</p><p class="price">3.00$</p>
+            </article>
+            <article class="item">
+                <p class="flavor">Caramel Macchiato</p><p class="price">3.75$</p>
+            </article>
+            <article class="item">
+                <p class="flavor">Pumpkin Spice</p><p class="price">3.50$</p>
+            </article>
+            <article class="item">
+                <p class="flavor">Hazelnut</p><p class="price">4.00$</p>
+            </article>
+            <article class="item">
+                <p class="flavor">Mocha</p><p class="price">4.50$</p>
+            </article>
+            <article class="item">
+                <p class="flavor">Cappuccino</p><p class="price">3.35$</p>
+            </article>
+        </section>
+            
+        <section>
+            <h2>Desserts</h2>
+            <img src="./images/pie.jpg" alt="pie icon">
+            <article class="item">
+                <p class="flavor">Donut</p><p class="price">1.50$</p>
+            </article>
+            <article class="item">
+                <p class="flavor">Cherry Pie</p><p class="price">2.75$</p>
+            </article>
+            <article class="item">
+                <p class="flavor">Cheesecake</p><p class="price">3.00$</p>
+            </article>
+            <article class="item">
+                <p class="flavor">Cinnamon Roll</p><p class="price">2.50$</p>
+            </article>
+            <article class="item">
+                <p class="flavor">Croissant</p><p class="price">2.45$</p>
+            </article>
+        </section>
+    </div>
+
+
+    <div class="page">
+        <section class="box">
+            <h3 class="box-title">ITEMS</h3>
+            <ul class="orders">
+                <!-- <li class="order">
+                    <div class="item-quantity">1x</div>
+                    <div class="item-title">Cappuccino </div> 
+                    <div class="item-price">$3.35</div>
+                </li>-->
+            </ul>
+        </section>
+
+        <section class="payment">
+            <section class="box">
+                <h3 class="box-title">NAME</h3>
+                <div class="input-group">
+                    <label class="input-label" for="name">Name for order</label>
+                    <input class="input" type="text" id="name">
+                </div>
+            </section>
+
+            <section class="box">
+                <h3 class="box-title">PAYMENT</h3>
+                <div class="input-group">
+                    <label class="input-label" for="cc">Card number</label>
+                    <input class="input long" type="number" id="cc">
+                </div>
+                <div class="input-group">
+                    <label class="input-label" for="cvv">CVV number</label>
+                    <input class="input" type="number" id="cvv">
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <section class="total">
+        <h2>Your Bill</h2>
+        <ul>
+            <li>
+                <div>Subtotal:</div>
+                <div class="subtotal">$0.0</div>
+            </li>
+            <li>
+                <div>Tax:</div>
+                <div class="tax">$0.0</div>
+            </li>
+            <li class="final-totals">
+                <div>Total:</div>
+                <div class="bill">$0.0</div>
+            </li>
+        </ul>
+        <button type="submit">Place order</button>
+    </section>
+    
+
+    <footer>
+        <p>
+          <a href="https://github.com/omarowaity" target="_blank">Visit my page</a>
+        </p>
+        <p>&copy; 2023 Omar Owaity - Coffee Shop</p>
+        <p class="established">All rights reserved</p>
+    </footer>
+    
+
+    <script src="bill.js"></script>
+</body>
+</html>

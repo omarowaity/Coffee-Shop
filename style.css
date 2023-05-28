@@ -1,0 +1,294 @@
+*{
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    background-color: burlywood
+    /* background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    padding:20px; */
+}
+
+h1,h2,h3{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*nav section*/
+.main-nav{
+    background-color: #43281c;
+    color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.brand{
+    margin-top: 10px;
+}
+
+.logo{ /*no need to add top and position, it was added because it looked not on the exact same line of brand */
+    height: 30px;
+    top: 3px;
+    position: relative;
+}
+
+.established {
+    font-style: italic;
+}
+/****************************************************************************************/
+
+/*Menu section*/
+.menu {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    /* max-width: 500px; */
+} 
+
+.title h1{
+    color: #43281c;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.title span{
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #43281c;
+}
+
+.menu section{
+    border: 1px solid #885a2d;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 5px;
+}
+
+.menu h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: Impact, serif;
+}
+
+.menu img{
+    display:block;
+    margin: 5px auto;
+} 
+
+.item p {
+    display: inline-block; /*display: inline-block; to make elements appear in one block at same line*/
+    margin-top:5px;
+    margin-bottom:5px;
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+}
+
+.flavor{
+    text-align: left;
+    width: 70%;
+}
+  
+.price {
+    text-align: right;
+    width: 30%;
+    cursor:pointer;
+}
+
+/****************************************************************************/
+
+/*Order Box*/
+.page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"order payment";
+    column-gap: 30px; 
+    margin-bottom: 50px;
+}
+
+.box{
+    background-color: #885a2d;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.box-title{
+    color: burlywood;
+    margin: 1rem;
+}
+
+.item-quantity{
+    grid-area: quantity;
+}
+.item-price{
+    grid-area: price;
+    font-weight: bold;
+}
+.item-title{
+    grid-area: title;
+    font-weight: bold;
+}
+
+.box .order{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    "quantity title price"
+    "quantity null price";
+    row-gap: 8px;
+    padding: 10px 0;
+    border-bottom: 2px solid burlywood;
+}
+
+ul{
+    padding: 1rem;
+    list-style: none;
+}
+
+.order {
+    grid-area: order;
+}
+  
+.payment {
+    grid-area: payment;
+}
+/************************************************************/
+
+/*Input*/
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+  }
+
+.input {
+    background-color: rgba(0,0,0,0);
+    border: 2px burlywood solid;
+    padding: 8px;
+    border-radius: 100px;
+    width: 100%;
+    text-indent: 18px;
+    font-size: 18px;
+}
+
+.input-label {
+    color: burlywood;
+    background-color: #885a2d;
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px; /*from the top go up by 7px*/
+    padding: 0 2px;
+}
+/************************************************************/
+
+/*Total Section*/
+.total{
+    border: 1px solid #885a2d;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 5px;
+}
+
+.total h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: Impact, serif;
+}
+
+.total p {
+    display: inline-block; /*display: inline-block; to make elements appear in one block at same line*/
+    margin-top:5px;
+    margin-bottom:5px;
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+}
+
+.final-totals {
+    font-weight: bold;
+}
+
+li{
+    width: 100%;
+    margin-top:5px;
+    margin-bottom:10px;
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+button{
+    background-color: #885a2d;
+    font-family: 'Pacifico', cursive;
+    color: burlywood;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 18px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: burlywood;
+    color: #885a2d;
+    border: 1px solid #885a2d;
+}
+/*************************************************************************************/
+
+/*Footer Section*/
+footer{
+    margin-top: 2rem;
+    padding: 2rem 0;
+    background-color: #43281c;
+    color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+footer p{
+    padding: 0;
+    margin: 5px;
+}
+
+footer a{
+    color: burlywood;
+    text-decoration: none;
+}
+
+footer a:hover{
+    border-bottom: 1px solid burlywood;
+}
+/************************************************************/
+
+@media(max-width: 700px){
+    .page{
+        column-gap: 0px;
+        grid-template-columns: 1fr;
+        grid-template-areas:"order"
+        "payment";
+    }
+    body{
+        font-size: 12px;
+    }
+}
